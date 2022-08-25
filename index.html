@@ -19,7 +19,23 @@ layout: default
         <a id="title" href="{{ '/' | relative_url }}">
           <h1>Central Location for Challenge Info & Submissions - Linking to GitHub </h1>
         </a>
-        <h2> h2 space  </h2>
+        <h2> Submissions must require a whitepaper with description of processes, Code, and Team Member Information. </h2>
+        <!-- modify this form HTML and place wherever you want your form -->
+  <form
+      action="https://formspree.io/f/xoqbvlda"
+      method="POST"
+      enctype="multipart/form-data"
+   >
+    <label>
+      Your email:
+      <input type="email" name="email">
+    </label>
+    <label>
+      Your file:
+      <input type="file" name="upload">
+    </label>
+      <button type="submit">Send</button>
+   </form>
 
         <section id="downloads">
           {% if site.show_downloads %}
